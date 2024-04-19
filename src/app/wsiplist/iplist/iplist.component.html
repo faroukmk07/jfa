@@ -1,0 +1,19 @@
+<p-table [value]="wsips" styleClass="p-datatable-gridlines" [tableStyle]="{ 'min-width': '50rem' }">
+  <ng-template pTemplate="caption"> WsIps </ng-template>
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Id</th>
+      <th>Description</th>
+      <th>WsUser</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-Wsip>
+    <tr>
+      <td>{{Wsip.id}}</td>
+      <td>{{Wsip.description}}</td>
+      <td>{{Wsip.wsUser}}</td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="summary"> Footer </ng-template>
+</p-table>
+

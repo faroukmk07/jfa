@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Side Navigation Bar</title>
+	<link rel="stylesheet" href="menu.component.css">
+</head>
+<body>
+  <header>
+    <img src="assets/menu.png" class="logoo">
+  </header>
+
+  <div class="wrapper">
+    
+    <div class="top_navbar">
+      <span class="message" >Admin profil</span>
+      <span class="pi pi-sign-out" type="button"></span>
+
+      
+
+    </div>
+   
+    <div class="sidebar">
+        <ul>
+          <li><a href="#">            
+            <span class="title">Gestion Demande</span></a></li>
+          <li><a href="#">           
+            <span class="title">Gestion des utilisateurs</span>
+            </a></li>
+          <li><a href="#">
+            <span class="title" >gestion wsusers</span>
+            </a></li>
+            <li><a href="#">
+              <span class="title">gestion des états</span>
+              </a></li>
+              <li><a href="#">
+                <span class="title">gestion familia</span>
+                </a></li>
+       </ul>
+      
+    
+    </div>
+
+  </div>
+  <div class="container">
+    
+    <span class="p-input-icon-left">
+      
+      <input pInputText type="text" class="p-inputtext-lg" placeholder="Rechercher" [(ngModel)]="value" />
+    </span>
+    <div class="btnsearch">
+      <i class="pi pi-search"  type="button" style="font-size: 1.2rem"></i>
+    </div>
+  </div>
+    
+
+  <footer>
+    <h2>© 2024 ooredoo</h2>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<p-table [value]="wsusers" styleClass="p-datatable-gridlines" [tableStyle]="{ 'min-width': '50rem' }">
+  <ng-template pTemplate="caption"> WsUsers </ng-template>
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Id</th>
+      <th>Login</th>
+      <th>Password</th>
+      <th>Description</th>
+      <th>Active</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-wsUser>
+    <tr>
+      <td>{{wsUser.id}}</td>
+      <td>{{wsUser.login}}</td>
+      <td>{{wsUser.password}}</td>
+      <td>{{wsUser.description}}</td>
+      <td>{{wsUser.active}}</td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="summary"> Footer </ng-template>
+</p-table>

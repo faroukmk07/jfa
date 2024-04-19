@@ -1,0 +1,20 @@
+
+<p-table [value]="wsroles" styleClass="p-datatable-gridlines" [tableStyle]="{ 'min-width': '50rem' }">
+  <ng-template pTemplate="caption"> WsUsers </ng-template>
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Id</th>
+      <th>Role</th>
+      <th>WsUser</th>
+    </tr>
+  
+  </ng-template>
+  <ng-template pTemplate="body" let-WsRoles>
+    <tr>
+      <td>{{WsRoles.id}}</td>
+      <td>{{WsRoles.role}}</td>
+      <td>{{WsRoles.wsUser}}</td>
+     </tr>
+    </ng-template>
+    <ng-template pTemplate="summary"> Footer </ng-template>
+  </p-table>
